@@ -5,7 +5,6 @@ import  FormInput   from '../FormInput';
 
 const Convertidor = () => {
 
-
     const [origen, setOrigen] = useState<string>('NIO')
     const [destino, setDestino] = useState<string>('USD')
     const [cantidadConvertir, setCantidadConvertit] = useState<number>(0)
@@ -32,6 +31,7 @@ const Convertidor = () => {
         if (!cantidadConvertir) {
             alert('se requiere la cantidad a convertir')
             return
+            
         }
         if (origen === 'NIO' && destino === 'USD') {
             setResultado(cantidadConvertir / tcDolar)

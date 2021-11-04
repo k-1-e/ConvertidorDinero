@@ -16,7 +16,7 @@ const FormInput = ({ errorMessage = 'Error', title, defaultValue, handelError = 
             <TextInput
                 defaultValue={defaultValue}
                 style={styles.input}
-                onChangeText={text => onChangeText}
+                onChangeText={text => onChangeText(text)}
             />
             {
                 handelError
